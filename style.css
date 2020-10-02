@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ddcdcdf2;
+
+}
+
+.body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box{
+    text-align: center;
+}
+
+.hours , .minutes , .seconds , .amorpm{
+    background-color: #201818;
+    width: 4em;
+    height: 4em;
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px 3px #f01212;
+
+}
+
+h1{
+    font-size: 1em;
+}
+
+#hours , #minutes , #seconds , #amorpm{
+    font-size: 2em;
+    color: white;
+}
