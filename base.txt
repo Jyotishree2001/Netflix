@@ -1,0 +1,50 @@
+create database db3;
+use db3;
+
+insert into LOCATION
+ values (122,'NEW YORK'),
+ (124,'DALLAS'),
+ (123,'CHICAGO'),
+ (167,'BOSTON');
+
+ select * from LOCATION; 
+
+insert into DEPARTMENT (DEPARTMENT_ID, DNAME, LOCATION)
+ values (10,'ACCOUNTING','122'),
+ (20,'RESEARCH','124'),
+ (30,'SALES','123'),
+       (40,'OPERATION','167');
+
+ select * from DEPARTMENT;
+
+ 
+insert into JOB values (667,'CLERK'),
+ (668,'STAFF'), 
+(669,'ANALYST'), 
+(670,'SALESPERSON'), 
+(671,'MANAGER'), 
+(672,'PRESIDENT'); 
+
+select * from JOB; 
+
+insert into SALARY_GRADE values (1,7000,12000),
+(2,12001,14000),
+(3,14001,20000),
+(4,20001,30000),
+(5,30001,99999); 
+
+select * from SALARY_GRADE;
+
+insert into employee(employee_id, Last_name, First_name, Job_id, Manager_id, Hire_date, Salary, Commision, department_id) 
+
+values(7839,'KING', 'FRANCIS', 672, NULL, '2019-07-01', 50000,null, 10); 
+
+insert into employee(employee_id, Last_name, First_name, Job_id, Manager_id, Hire_date, Salary, Commision, department_id) 
+
+values(7505,'DOYLE' ,'JEAN' ,671, 7839 ,'2011-04-21', 28500,null, 30),
+
+ (7506,'DENNIS', 'LYNN', 671, 7839 ,'2013-02-15', 27500,null, 30), (7507,'BAKER', 'LESLIE', 671, 7839, '2018-03-01', 22000,null, 40), (7566,'JONES' ,'TERRY', 671, 7839, '2019-03-01', 29750,null, 20), (7569,'ALBERTS', 'CHRIS', 671, 7839, '2012-08-03', 30000,null,20), (7698,'BLAKE' ,'MARION' ,671 ,7839, '2018-06-15', 28500 ,null,30), (7782,'CLARK', 'CAROL', 671, 7839, '2020-02-12', 24500,null, 10); 
+
+insert into employee(employee_id, Last_name, First_name, Job_id, Manager_id, Hire_date, Salary, Commision, department_id) 
+
+values(7555,'PETERS', 'DANIEL' ,670 ,7505 ,'2005-01-11', 12500, 3000 ,30), (7557,'SHAW', 'KAREN', 670, 7505, '2018-07-11', 12500, 12000, 30), (7600,'PORTER' ,'RAYMOND',670, 7505, '2009-12-29' ,12500, 9000, 30), (7820,'ROSS', 'PAUL', 669, 7505, '2018-04-15', 13000, 800, 30); 
